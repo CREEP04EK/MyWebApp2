@@ -40,7 +40,7 @@ def registration():
             return render_template('zero(r).html')
 
         if len(login)<1:
-            return  render_template('')
+            return  render_template('nologin.html')
         if len(password) < 1:
             return render_template('nopass.html')
         if len(name) < 1:
